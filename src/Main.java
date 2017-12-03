@@ -1,25 +1,34 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
+
     private static ArrayList<ArrayList<String>> personArray = new ArrayList<ArrayList<String>>();
 
     public static void main(String[] args) {
-        String Estelle, Dhen, Will, Dooho;
         Scanner scan = new Scanner(System.in);
 
+        fillArray();
 
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < personArray.size(); i++) {
             System.out.print("\nWho is this!? Santa? ");
             String Santa = scan.nextLine();
-            method(Santa);
+            santa(Santa);
         }
 
 
     }
 
-    private static void method(String name) {
+    private static void fillArray() {
+
+
+
+
+    }
+
+    private static void santa(String name) {
         Scanner scan = new Scanner(System.in);
         if (name.equals("Dhen"))        {
             System.out.println("hey country girl");
